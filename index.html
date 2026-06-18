@@ -26,6 +26,11 @@
         nav a {
             text-decoration: none;
             color: white;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #f0f0f0;
         }
 
         .header-content {
@@ -35,18 +40,79 @@
             transform: translate(-50%, -50%);
             color: white;
             text-align: center;
-
+            max-width: 900px;
+            padding: 20px;
         }
-        .header-content h1{
+
+        .header-content h1 {
             font-size: 4em;
+            margin: 0;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .header-content p {
+            font-size: 1.3em;
+            line-height: 1.5;
+            margin-top: 15px;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            position: relative;
+            overflow: hidden;
+        }
+
+        header img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        section h1,
+        section h2 {
+            color: #025e70;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            max-width: 900px;
+            margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style: disc inside;
+            padding-left: 0;
+            max-width: 900px;
             margin: 0;
         }
 
-        header img{
-    
+        section ul li {
+            margin-bottom: 10px;
         }
 
+        .aboutSec {
+            background-color: #f9f9f9;
+            padding: 30px 20px;
+            border-radius: 8px;
+        }
         
+        .chooseSec {
+            background-color: #f0f0f0;
+            padding: 30px 20px;
+            border-radius: 8px;
+        }
 
     </style>
 </head>
@@ -70,11 +136,11 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="aboutSec">
             <h1>About Us</h1>
             <p>TourAgent brings travelers inspiring journeys with personalized itineraries, friendly local guides, and seamless booking support. We connect curious explorers to authentic destinations, responsible adventures, and memorable experiences while keeping comfort, safety, and service at the core of every trip. Our passion is making discovery easy, joyful, and truly unforgettable.</p>
         </section>
-        <section>
+        <section class="choosSec">
             <h1>Why Choose Us</h1>
             <p>At TourAgent, we combine expertise with passion to create travel experiences that go beyond the ordinary. We offer trusted local guidance, flexible planning, and personal support so your journey feels seamless from start to finish.</p>
             <h2>What We Provide</h2>
